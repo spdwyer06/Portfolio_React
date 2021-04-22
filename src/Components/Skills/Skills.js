@@ -23,7 +23,7 @@ const Skills = () => {
                 <Col md='4'>
                     <img className='skills-logo' src={CSharpLogo} alt="C# Logo" />
                 </Col>
-                <Col md="4">
+                <Col md='4'>
                     <img className='skills-logo' src={JSLogo} alt="JavaScript Logo" />
                 </Col>
                 <Col md='4'>
