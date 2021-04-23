@@ -1,6 +1,7 @@
 import AboutMe from './Components/AboutMe/AboutMe';
 import Skills from './Components/Skills/Skills';
 import Portfolio from './Components/Portfolio/Portfolio';
+import ContactMe from './Components/ContactMe/ContactMe';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
@@ -11,6 +12,7 @@ function App() {
       <AboutMe />
       <Skills />
       <Portfolio />
+      <ContactMe />
     </div>
   );
 }
