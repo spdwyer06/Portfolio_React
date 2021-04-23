@@ -63,9 +63,10 @@ const Portfolio = () => {
                     <img className='project-language-logo' src={PythonLogo} alt='Python' onClick={(e) => displayProjects(e)} />
                 </Col>
             </Row>
-            {showCSharpProjects ? <h1>Showing C# projects</h1> : null}
+            {showCSharpProjects || showJavaScriptProjects || showPythonProjects ? <ProjectList projectLanguage={projectLanguage} /> : null}
+            {/* {showCSharpProjects ? <h1>Showing C# projects</h1> : null}
             {showJavaScriptProjects ? <h1>Showing JavaScript projects</h1> : null}
-            {showPythonProjects ? <h1>Showing Python projects</h1> : null}
+            {showPythonProjects ? <h1>Showing Python projects</h1> : null} */}
         </Container>
     );
 };
