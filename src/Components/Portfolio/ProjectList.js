@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import { Row, Col } from 'reactstrap';
 
 import Project from './Project';
 
@@ -118,14 +118,12 @@ const ProjectList = ({ projectLanguage }) => {
     useEffect(() => determineProjectsToLoad(), [projectLanguage]);
  
     return(
-        <Container>
             <Row>
-                <Col className='text-center'>
+                <Col className='text-center' xs='12'>
                     <h3>The selected project language is: {projectLanguage}</h3>
-                    {projects.map((project) => <Project title={project.title} description={project.description} utilizes={project.utilizes} projectLink={project.projectLink} />)}
                 </Col>
+                {projects.map((project) => <Project title={project.title} description={project.description} utilizes={project.utilizes} projectLink={project.projectLink} />)}
             </Row>
-        </Container>
     );
 }
 
