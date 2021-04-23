@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 
-// import Project from './Project';
+import Project from './Project';
 
 import './portfolio.css';
 
@@ -88,6 +88,7 @@ const ProjectList = ({ projectLanguage }) => {
             <Row>
                 <Col className='text-center'>
                     <h3>The selected project language is: {projectLanguage}</h3>
+                    {projects.map((project) => <Project title={project.title} description={project.description} ustilizes={project.utilizes} />)}
                 </Col>
             </Row>
         </Container>
