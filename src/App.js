@@ -2,9 +2,10 @@ import AboutMe from './Components/AboutMe/AboutMe';
 import Skills from './Components/Skills/Skills';
 import Portfolio from './Components/Portfolio/Portfolio';
 import ContactMe from './Components/ContactMe/ContactMe';
+import Footer from './Components/Footer/Footer';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
+import './app.css';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Skills />
       <Portfolio />
       <ContactMe />
+      <Footer />
     </div>
   );
 }

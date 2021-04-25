@@ -1,7 +1,7 @@
 import React from 'react';
 import {Media, Col, Row, Container} from 'reactstrap';
 import AboutMeImg from '../../Assets/AboutMeImg.jpg';
-import './AboutMe.css';
+import './aboutMe.css';
 
 const AboutMe = () => {
     return (
