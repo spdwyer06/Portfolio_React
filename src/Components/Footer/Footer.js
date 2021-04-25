@@ -1,4 +1,5 @@
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col, Button } from 'reactstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import LinkedInLogo from '../../Assets/FooterLogo_LinkedIn.png';
 import CodePenLogo from '../../Assets/FooterLogo_CodePen1.png';
@@ -29,6 +30,16 @@ const Footer = () => {
             <Row>
                 <Col className='text-center'>
                     <small>Sean Dwyer &copy; 2021</small>
+                </Col>
+            </Row>
+            <Row>
+                {/* <Col sm={{size: 'auto', offset: 5}}> */}
+                <Col>
+                <a href='#landing-zone'><Button><i className="fa fa-angle-double-up"></i></Button></a>
+                    {/* <FontAwesomeIcon icon='fa-angle-double-up' /> */}
+                    {/* <FontAwesomeIcon icon={['fas', 'fa-angle-double-up']} /> */}
+                    {/* <Button><FontAwesomeIcon icon={['fas', 'fa-angle-double-up']} /></Button> */}
+                        {/* <i className="fas fa-angle-double-up"></i></Button> */}
                 </Col>
             </Row>
         </Container>
