@@ -1,0 +1,9 @@
+.eight-bit-btn{
+    display: inline-block;
+    /* position: relative; */
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    color: white;
+    box-shadow: inset 4px 4px 0px 0px #ce372b;
+}

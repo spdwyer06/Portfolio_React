@@ -50,7 +50,7 @@ const ContactMe = () => {
                 </Row>
                 <Row>
                     <Col className='text-center'>
-                        <Button type='submit'>Send Message</Button>
+                        <Button className='eight-bit-btn' type='submit'>Send Message</Button>
                     </Col>
                 </Row>
             </Container>
