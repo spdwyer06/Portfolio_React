@@ -1,3 +1,4 @@
+import LandingZone from './Components/LandingZone/LandingZone';
 import AboutMe from './Components/AboutMe/AboutMe';
 import Skills from './Components/Skills/Skills';
 import Portfolio from './Components/Portfolio/Portfolio';
@@ -10,6 +11,7 @@ import './app.css';
 function App() {
   return (
     <div className="App">
+      <LandingZone />
       <AboutMe />
       <Skills />
       <Portfolio />
