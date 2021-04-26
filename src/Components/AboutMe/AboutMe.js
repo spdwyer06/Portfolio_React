@@ -6,10 +6,10 @@ import './aboutMe.css';
 
 const AboutMe = () => {
     return (
-    <Container>
+    <Container id='about-me' fluid={true}>
         <Row>
             <Col md='4'>
-                <img className='aboutMeImg' src={AboutMeImg2} alt='Me' />
+                <img className='about-me-img' src={AboutMeImg2} alt='Me' />
             </Col>
             <Col md='8'>
                     <h2>About Me</h2>

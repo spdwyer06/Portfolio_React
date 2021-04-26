@@ -17,7 +17,7 @@ const Footer = () => {
         <Container id='footer' fluid={true}>
             <Row>
                 <Col className='text-center'>
-                    <h6>-Find me on-</h6>
+                    <h6 id='footer-header'>-Find me on-</h6>
                 </Col>
             </Row>
             <Row>
@@ -41,7 +41,7 @@ const Footer = () => {
             </Row>
             <Row>
                 {/* <Col sm={{size: 'auto', offset: 5}}> */}
-                <Col>
+                <Col id='final-row'>
                 <a href='#landing-zone'><Button><i className="fa fa-angle-double-up"></i></Button></a>
                     {/* <FontAwesomeIcon icon='fa-angle-double-up' /> */}
                     {/* <FontAwesomeIcon icon={['fas', 'fa-angle-double-up']} /> */}

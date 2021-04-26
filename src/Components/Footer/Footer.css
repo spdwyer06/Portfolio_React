@@ -4,7 +4,15 @@
     color: white;
 }
 
+#footer-header{
+    margin-top: 30px;
+}
+
 .footer-img{
     height: 75px;
     width: 75px;
+}
+
+#final-row{
+    margin-bottom: 30px;
 }

@@ -25,7 +25,9 @@ const LandingZone = () => {
             </Row>
             <Row>
                 <Col className='text-center'>
-                    <a href='#portfolio'><Button>View My Work</Button></a>
+                    <div id='landing-zone-btn-bkg'>
+                    <a href='#portfolio'><Button id='landing-zone-btn'>View My Work</Button></a>
+                    </div>
                 </Col>
             </Row>
         </Container>

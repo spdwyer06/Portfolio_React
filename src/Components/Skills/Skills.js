@@ -15,7 +15,7 @@ const Skills = () => {
         <Container id='skills' fluid={true}>
             <Row>
                 <Col className='text-center'>
-                    <h2>Technical Skills</h2>
+                    <h2 id='skills-header'>Technical Skills</h2>
                 </Col>
             </Row>
             <br />
@@ -48,7 +48,7 @@ const Skills = () => {
                 </Col>
             </Row>
             <Row>
-                <Col md="4">HTML5/CSS3</Col>
+                <Col id='final-row' md="4">HTML5/CSS3</Col>
                 <Col md="4">React</Col>
                 <Col md="4">GitHub</Col>
             </Row>

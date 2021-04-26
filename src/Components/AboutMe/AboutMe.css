@@ -1,8 +1,14 @@
-.aboutMeImg{
+.about-me-img{
     height: 500px;
     width: 400px;
+    margin-left: 30px;
     /* Diamond */
     clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0% 50%);
     /* Pentagon */
     /* clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%); */
+}
+
+#about-me{
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
