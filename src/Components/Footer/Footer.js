@@ -1,5 +1,4 @@
 import { Container, Row, Col, Button } from 'reactstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import LinkedInLogo from '../../Assets/FooterLogo_LinkedIn.png';
 import CodePenLogo from '../../Assets/FooterLogo_CodePen1.png';
@@ -10,7 +9,7 @@ import './footer.css';
 const Footer = () => {
 
     return(
-        <Container>
+        <Container id='footer' fluid={true}>
             <Row>
                 <Col className='text-center'>
                     <h6>-Find me on-</h6>

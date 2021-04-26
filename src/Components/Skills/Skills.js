@@ -12,10 +12,10 @@ import './skills.css';
 
 const Skills = () => {
     return (
-        <Container>
+        <Container id='skills' fluid={true}>
             <Row>
                 <Col className='text-center'>
-                    Skills
+                    <h2>Technical Skills</h2>
                 </Col>
             </Row>
             <br />

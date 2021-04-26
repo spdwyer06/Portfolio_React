@@ -21,7 +21,7 @@ const ContactMe = () => {
 
     return (
         <Form onSubmit={handleSubmit}>
-            <Container>
+            <Container id='contact-me' fluid={true}>
                 <Row>
                     <Col className='text-center'>
                         <h1>Contact Me</h1>

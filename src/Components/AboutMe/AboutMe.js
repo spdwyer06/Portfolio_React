@@ -1,6 +1,7 @@
 import React from 'react';
 import {Media, Col, Row, Container} from 'reactstrap';
 import AboutMeImg from '../../Assets/AboutMeImg.jpg';
+import AboutMeImg2 from '../../Assets/AboutMeImg2.jpg';
 import './aboutMe.css';
 
 const AboutMe = () => {
@@ -8,12 +9,12 @@ const AboutMe = () => {
     <Container>
         <Row>
             <Col md='4'>
-                <img className='aboutMeImg' src={AboutMeImg} />
+                <img className='aboutMeImg' src={AboutMeImg2} alt='Me' />
             </Col>
             <Col md='8'>
                     <h2>About Me</h2>
                     <br />
-                    <h4>
+                    <p>
                         I was born in Chicago, Illinois but have spent most of my life in Fishers, Indiana.<br />
                         I've always enjoyed deconstructing and rebuilding things just to understand how they <br />
                         work and I've found that software development offers the same enjoyment. The feeling of <br />
@@ -22,7 +23,7 @@ const AboutMe = () => {
                         Although most of my experience is outside of software development field I am a very <br />
                         thorough and detail oriented person that loves the problem solving nature of this field <br />
                         and am looking forward to starting my career in the tech industry.
-                    </h4>
+                    </p>
             </Col> 
         </Row>
     </Container>

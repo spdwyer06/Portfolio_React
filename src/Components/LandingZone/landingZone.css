@@ -1,6 +1,7 @@
 #landing-zone{
     height: 100vh;
-    background-color: rgb(11, 11, 54);
+    /* background-color: rgb(11, 11, 54); */
+    background-color: #1b242f;
     color: white;
 }
 
