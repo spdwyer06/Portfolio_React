@@ -12,3 +12,20 @@
     color: white;
     box-shadow: inset 4px 4px 0px 0px #ce372b;
 }
+
+.form-row{
+    margin-bottom: 20px;
+}
+
+#resume-btn{
+    margin-bottom: 50px;;
+}
+
+#contact-me-header{
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+#form-submit-btn{
+    margin-bottom: 25px;
+}

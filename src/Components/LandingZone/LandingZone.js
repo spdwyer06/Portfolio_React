@@ -10,7 +10,7 @@ const LandingZone = () => {
         <Container id='landing-zone' fluid={true}>
             <Row id='first-row'>
                 <Col className='text-center'>
-                <h1><span><img className='coin' src={Coin} /></span>INSERT COIN</h1>
+                <h1><span><img className='coin' src={Coin} alt='8-bit coin' /></span>INSERT COIN</h1>
                 </Col>
             </Row>
             <Row>

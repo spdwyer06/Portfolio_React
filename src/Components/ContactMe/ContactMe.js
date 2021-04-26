@@ -23,12 +23,12 @@ const ContactMe = () => {
         <Container id='contact-me' fluid={true}>
             <Row>
                 <Col className='text-center'>
-                    <h1>Contact Me</h1>
+                    <h1 id='contact-me-header'>Contact Me</h1>
                 </Col>
             </Row>
             <Row>
                 <Col className='text-center'>
-                    <a  href='../../Assets/SeanDwyerResume.pdf' download='SeanDwyerResume.pdf'><Button>Download My Resume</Button></a>
+                    <a  href='../../Assets/SeanDwyerResume.pdf' download='SeanDwyerResume.pdf'><Button id='resume-btn'>Download My Resume</Button></a>
                 </Col>
             </Row>
             <Form onSubmit={handleSubmit}>
@@ -53,7 +53,7 @@ const ContactMe = () => {
                 </Row>
                 <Row>
                     <Col className='text-center'>
-                        <Button className='eight-bit-btn' type='submit'>Send Message</Button>
+                        <Button id='form-submit-btn' className='eight-bit-btn' type='submit'>Send Message</Button>
                     </Col>
                 </Row>
             </Form>
