@@ -8,6 +8,63 @@ import './portfolio.css';
 const ProjectList = ({ projectLanguage }) => {
     const [projects, setProjects] = useState([]);
 
+    const allProjects = [
+        {
+            title: 'C# Project 1',
+            description: 'Project description',
+            utilizes: ['Techniques', 'the', 'project', 'utilizes'],
+            projectLink: 'GitHub/deployed link to project'
+        },
+        {
+            title: 'C# Project 2',
+            description: 'Project description',
+            utilizes: ['Techniques', 'the', 'project', 'utilizes'],
+            projectLink: 'GitHub/deployed link to project'
+        },
+        {
+            title: 'C# Project 3',
+            description: 'Project description',
+            utilizes: ['Techniques', 'the', 'project', 'utilizes'],
+            projectLink: 'GitHub/deployed link to project'
+        },
+        {
+            title: 'JS Project 1',
+            description: 'Project description',
+            utilizes: ['Techniques', 'the', 'project', 'utilizes'],
+            projectLink: 'GitHub/deployed link to project'
+        },
+        {
+            title: 'JS Project 2',
+            description: 'Project description',
+            utilizes: ['Techniques', 'the', 'project', 'utilizes'],
+            projectLink: 'GitHub/deployed link to project'
+        },
+        {
+            title: 'JS Project 3',
+            description: 'Project description',
+            utilizes: ['Techniques', 'the', 'project', 'utilizes'],
+            projectLink: 'GitHub/deployed link to project'
+        },
+        {
+            title: 'EFA Project 1',
+            description: 'Project description',
+            utilizes: ['Techniques', 'the', 'project', 'utilizes'],
+            projectLink: 'GitHub/deployed link to project'
+        },
+        {
+            title: 'EFA Project 2',
+            description: 'Project description',
+            utilizes: ['Techniques', 'the', 'project', 'utilizes'],
+            projectLink: 'GitHub/deployed link to project'
+        },
+        {
+            title: 'EFA Project 3',
+            description: 'Project description',
+            utilizes: ['Techniques', 'the', 'project', 'utilizes'],
+            projectLink: 'GitHub/deployed link to project'
+        }
+    ];
+
     const cSharpProjects = [
         {
             title: 'C# Project 1',
@@ -71,6 +128,8 @@ const ProjectList = ({ projectLanguage }) => {
         }
     ];
 
+    // const allProjects = [cSharpProjects, javaScriptProjects, efaProjects];
+
     // const pythonProjects = [
     //     {
     //         title: 'Python Project 1',
@@ -94,6 +153,10 @@ const ProjectList = ({ projectLanguage }) => {
 
     const determineProjectsToLoad = () => {
         switch(projectLanguage){
+            case 'ALL':
+                console.log('Setting all projects');
+                setProjects(allProjects);
+                break;
             case 'C#':
                 console.log('Setting C# projects');
                 setProjects(cSharpProjects);
