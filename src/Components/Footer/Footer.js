@@ -2,7 +2,9 @@ import { Container, Row, Col, Button } from 'reactstrap';
 
 import LinkedInLogo from '../../Assets/FooterLogo_LinkedIn.png';
 import CodePenLogo from '../../Assets/FooterLogo_CodePen1.png';
-import GitHubLogo from '../../Assets/FooterLogo_GitHub.png';
+import GitHubLogo from '../../Assets/FooterLogo_GitHub10.png';
+import GitHubLogo2 from '../../Assets/FooterLogo_GitHub2.png';
+import GitHubLogo3 from '../../Assets/FooterLogo_GitHub3.png';
 
 import './footer.css';
 
