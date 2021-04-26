@@ -20,18 +20,18 @@ const ContactMe = () => {
     }
 
     return (
-        <Form onSubmit={handleSubmit}>
-            <Container id='contact-me' fluid={true}>
-                <Row>
-                    <Col className='text-center'>
-                        <h1>Contact Me</h1>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col className='text-center'>
-                        <Button>Download Resume</Button>
-                    </Col>
-                </Row>
+        <Container id='contact-me' fluid={true}>
+            <Row className='form-row'>
+                <Col className='text-center'>
+                    <h1>Contact Me</h1>
+                </Col>
+            </Row>
+            <Row>
+                <Col className='text-center'>
+                    <a  href='../../Assets/SeanDwyerResume.pdf' download='SeanDwyerResume.pdf'><Button>Download My Resume</Button></a>
+                </Col>
+            </Row>
+            <Form onSubmit={handleSubmit}>
                 <Row>
                     <Col sm='6' md={{size: 5, offset: 1}} >
                         <Input type='text' placeholder='First Name' onChange={(e) => setFirstName(e.target.value)} />
@@ -56,9 +56,8 @@ const ContactMe = () => {
                         <Button className='eight-bit-btn' type='submit'>Send Message</Button>
                     </Col>
                 </Row>
-            </Container>
-
-        </Form>
+            </Form>
+        </Container>
     );
 };
 

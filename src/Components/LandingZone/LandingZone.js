@@ -8,6 +8,12 @@ const LandingZone = () => {
     
     return(
         <Container id='landing-zone' fluid={true}>
+                <Row>
+                    <Col className='text-center'>
+                        <a  href='../../Assets/SeanDwyerResume.pdf' download='SeanDwyerResume.pdf'><Button>Download Resume</Button></a>
+                        {/* <Button>Download Resume</Button> */}
+                    </Col>
+                </Row>
             <Row id='first-row'>
                 <Col className='text-center'>
                 <h1><span><img className='coin' src={Coin} /></span>INSERT COIN</h1>
