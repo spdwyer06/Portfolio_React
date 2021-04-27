@@ -62,7 +62,7 @@ const Portfolio = () => {
         <Container id='portfolio'>
             <Row>
                 <Col className='text-center'>
-                    <h1>Portfolio</h1>
+                    <h1 id='portfolio-header'>Portfolio</h1>
                 </Col>
             </Row>
             <Row>

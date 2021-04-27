@@ -12,7 +12,7 @@ const AboutMe = () => {
                 <img className='about-me-img' src={AboutMeImg2} alt='Me' />
             </Col>
             <Col md='8'>
-                    <h2>About Me</h2>
+                    <h2 id='about-me-header'>About Me</h2>
                     <br />
                     <p>
                         I was born in Chicago, Illinois but have spent most of my life in Fishers, Indiana.<br />

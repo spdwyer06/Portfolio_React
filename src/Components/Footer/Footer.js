@@ -34,28 +34,24 @@ const Footer = () => {
                     {/* <img className='footer-img' src={GitHubLogo} alt='GitHub' /> */}
                 </Col>
             </Row>
-            <Row>
-                <Col className='text-center'>
+            <Row id='final-row'>
+                <Col sm='6' md={{size: 4, offset: 4}}>
                     <small>Sean Dwyer &copy; 2021</small>
                 </Col>
+                <Col sm='6' md='1'>
+                    <div id='footer-btn-bkg'>
+                        <a href='#landing-zone'><Button id='footer-btn'>«</Button></a>
+                    </div>
+                </Col>
             </Row>
-            <Row>
-                {/* <Col sm={{size: 'auto', offset: 5}}> */}
+            {/* <Row>
                 <Col id='final-row'>
                     <div id='footer-btn-bkg'>
                         <a href='#landing-zone'><Button id='footer-btn'>«</Button></a>
                     </div>
-                    {/* <a href='#landing-zone'><Button id='footer-btn'><i id='footer-btn-icon' className="fa fa-angle-double-up"></i></Button></a> */}
-                    {/* <div id='footer-btn-bkg'> */}
-                        {/* <a href='#landing-zone'><Button id='footer-btn'><i id='footer-btn-icon' className="fa fa-angle-double-up"></i></Button></a> */}
-                        {/* <a href='#landing-zone'><Button id='footer-btn'><span id='footer-btn-icon'>^</span></Button></a>
-                    </div> */}
-                    {/* <FontAwesomeIcon icon='fa-angle-double-up' /> */}
-                    {/* <FontAwesomeIcon icon={['fas', 'fa-angle-double-up']} /> */}
-                    {/* <Button><FontAwesomeIcon icon={['fas', 'fa-angle-double-up']} /></Button> */}
-                        {/* <i className="fas fa-angle-double-up"></i></Button> */}
                 </Col>
-            </Row>
+            </Row> */}
+                {/* <Col sm={{size: 'auto', offset: 5}}> */}
         </Container>
     );
 }
