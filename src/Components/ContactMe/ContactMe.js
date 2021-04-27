@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Button, Form, FormGroup, Label, Input, FormText, Container, Row, Col } from 'reactstrap';
+import EmailJS from 'emailjs-com';
 
 import MyResume from '../../Assets/SeanDwyerResume.pdf';
 
@@ -11,12 +12,21 @@ const ContactMe = () => {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
 
+
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log('First Name:', firstName);
-        console.log('Last Name:', lastName);
-        console.log('Email:', email);
-        console.log('Message:', message);
+        // console.log('First Name:', firstName);
+        // console.log('Last Name:', lastName);
+        // console.log('Email:', email);
+        // console.log('Message:', message);
+
+
+        EmailJS.sendForm('service_l7w4j5r', 'template_drtbybj', e.target, 'user_gFEfwgQohW2W1YtHEooap')
+            .then(res => {
+                window.location.reload()
+            }, err => {
+                console.log(err.text);
+            });
     }
 
     return (
@@ -28,27 +38,27 @@ const ContactMe = () => {
             </Row>
             <Row>
                 <Col className='text-center'>
-                    <a  href='../../Assets/SeanDwyerResume.pdf' download='SeanDwyerResume.pdf'><Button id='resume-btn'>Download My Resume</Button></a>
+                    <a  href={MyResume} download='SeanDwyerResume.pdf'><Button id='resume-btn'>Download My Resume</Button></a>
                 </Col>
             </Row>
             <Form onSubmit={handleSubmit}>
                 <Row className='form-row'>
                     <Col sm='6' md={{size: 5, offset: 1}} >
-                        <Input type='text' placeholder='First Name' onChange={(e) => setFirstName(e.target.value)} />
+                        <Input type='text' placeholder='First Name' name='from_first_name' onChange={(e) => setFirstName(e.target.value)} />
                     </Col>
                     <Col sm='6' md='5'>
-                        <Input type='text' placeholder='Last Name' onChange={(e) => setLastName(e.target.value)} />
+                        <Input type='text' placeholder='Last Name' name='from_last_name' onChange={(e) => setLastName(e.target.value)} />
                     </Col>
                 </Row>
                 <Row className='form-row'>
                     {/* <Col className='col-sm-12 col-md-6 offset-md-3'> */}
                     <Col sm='12' md={{size: 8, offset: 2}}>
-                        <Input type='email' placeholder='Email' onChange={(e) => setEmail(e.target.value)} />
+                        <Input type='email' placeholder='Email' name='from_email' onChange={(e) => setEmail(e.target.value)} />
                     </Col>
                 </Row>
                 <Row className='form-row'>
                     <Col sm='12' md={{size: 10, offset: 1}}>
-                        <Input type='textarea' placeholder='Message' onChange={(e) => setMessage(e.target.value)} />
+                        <Input type='textarea' placeholder='Message' name='message' onChange={(e) => setMessage(e.target.value)} />
                     </Col>
                 </Row>
                 <Row>
