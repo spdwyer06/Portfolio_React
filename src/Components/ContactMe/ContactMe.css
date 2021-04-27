@@ -3,21 +3,30 @@
     color: white;
 }
 
-.eight-bit-btn{
+/* .eight-bit-btn{
     display: inline-block;
-    /* position: relative; */
+    position: relative;
     text-align: center;
     font-size: 30px;
     padding: 20px;
     color: white;
-    box-shadow: inset 4px 4px 0px 0px #ce372b;
-}
+    box-shadow: inset -4px -4px 0px 0px #aaa9a9;
+} */
 
 .form-row{
     margin-bottom: 20px;
 }
 
-#resume-btn{
+#resume-btn-bkg{
+    height: 75px;
+    width: 350px;
+    background-color: black;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    padding-top: 18px;
+    clip-path: polygon(0% 25%, 5% 25%, 5% 0%, 95% 0%, 95% 25%, 100% 25%, 100% 75%, 95% 75%, 95% 100%, 5% 100%, 5% 75%, 0% 75%);
     margin-bottom: 50px;
 }
 
@@ -26,6 +35,19 @@
     margin-bottom: 30px;
 }
 
-#form-submit-btn{
-    margin-bottom: 25px;
+#form-submit-btn-bkg{
+    height: 75px;
+    width: 245px;
+    background-color: black;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    padding-top: 18px;
+    clip-path: polygon(0% 25%, 5% 25%, 5% 0%, 95% 0%, 95% 25%, 100% 25%, 100% 75%, 95% 75%, 95% 100%, 5% 100%, 5% 75%, 0% 75%);
+    margin-bottom: 50px;
 }
+
+/* #form-submit-btn{
+    margin-bottom: 25px;
+} */

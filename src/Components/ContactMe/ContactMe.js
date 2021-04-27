@@ -38,7 +38,9 @@ const ContactMe = () => {
             </Row>
             <Row>
                 <Col className='text-center'>
-                    <a  href={MyResume} download='SeanDwyerResume.pdf'><Button id='resume-btn'>Download My Resume</Button></a>
+                    <div id='resume-btn-bkg'>
+                        <a  href={MyResume} download='SeanDwyerResume.pdf'><Button id='resume-btn'>Download My Resume</Button></a>
+                    </div>
                 </Col>
             </Row>
             <Form onSubmit={handleSubmit}>
@@ -63,7 +65,9 @@ const ContactMe = () => {
                 </Row>
                 <Row>
                     <Col className='text-center'>
-                        <Button id='form-submit-btn' className='eight-bit-btn' type='submit'>Send Message</Button>
+                        <div id='form-submit-btn-bkg'>
+                            <Button id='form-submit-btn' className='eight-bit-btn' type='submit'>Send Message</Button>
+                        </div>
                     </Col>
                 </Row>
             </Form>

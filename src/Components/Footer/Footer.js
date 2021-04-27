@@ -42,7 +42,14 @@ const Footer = () => {
             <Row>
                 {/* <Col sm={{size: 'auto', offset: 5}}> */}
                 <Col id='final-row'>
-                <a href='#landing-zone'><Button><i className="fa fa-angle-double-up"></i></Button></a>
+                    <div id='footer-btn-bkg'>
+                        <a href='#landing-zone'><Button id='footer-btn'>«</Button></a>
+                    </div>
+                    {/* <a href='#landing-zone'><Button id='footer-btn'><i id='footer-btn-icon' className="fa fa-angle-double-up"></i></Button></a> */}
+                    {/* <div id='footer-btn-bkg'> */}
+                        {/* <a href='#landing-zone'><Button id='footer-btn'><i id='footer-btn-icon' className="fa fa-angle-double-up"></i></Button></a> */}
+                        {/* <a href='#landing-zone'><Button id='footer-btn'><span id='footer-btn-icon'>^</span></Button></a>
+                    </div> */}
                     {/* <FontAwesomeIcon icon='fa-angle-double-up' /> */}
                     {/* <FontAwesomeIcon icon={['fas', 'fa-angle-double-up']} /> */}
                     {/* <Button><FontAwesomeIcon icon={['fas', 'fa-angle-double-up']} /></Button> */}
