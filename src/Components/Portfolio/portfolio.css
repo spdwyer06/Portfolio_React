@@ -11,3 +11,7 @@
 /* #portfolio-header{
     transform: rotate(90deg);
 } */
+
+.project-img{
+    height: 250px;
+}

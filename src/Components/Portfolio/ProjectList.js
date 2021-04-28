@@ -36,8 +36,8 @@ const ProjectList = ({ projectLanguage }) => {
         {
             title: 'Restaurant Rater',
             projectImg: RestaurantRater,
-            description: 'Project description',
-            utilizes: ['Techniques', 'the', 'project', 'utilizes'],
+            description: 'MVC Api to list, create, and rate restaurants.',
+            utilizes: ['C#', 'Razor Pages', 'Api', 'MVC'],
             projectLink: 'https://github.com/spdwyer06/RestaurantRaterMVC'
         }
     ];
