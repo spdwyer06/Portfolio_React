@@ -4,77 +4,19 @@ import { Row, Col } from 'reactstrap';
 import Project from './Project';
 
 import GameStash from '../../Assets/Portfolio_GameStash.PNG';
+import Doughlicious from '../../Assets/Portfolio_Doughlicious.JPG';
+import StaticLayout from '../../Assets/Portfolio_StaticLayout.JPG';
+import BookBubble from '../../Assets/Portfolio_BookBubble.JPG';
+import Pokedex from '../../Assets/Portfolio_Pokedex.JPG';
+import MovieSearch from '../../Assets/Portfolio_ReactMovieSearch.JPG';
+import PizzaPlanetExress from '../../Assets/Portfolio_PizzaPlanetExpress.JPG';
+import QuickNote from '../../Assets/Portfolio_QuickNote.JPG';
+import RestaurantRater from '../../Assets/Portfolio_RestaurantRater.JPG';
 
 import './portfolio.css';
 
 const ProjectList = ({ projectLanguage }) => {
     const [projects, setProjects] = useState([]);
-
-    const allProjects = [
-        {
-            title: 'C# Project 1',
-            projectImg: '',
-            description: 'Project description',
-            utilizes: ['Techniques', 'the', 'project', 'utilizes'],
-            projectLink: 'GitHub/deployed link to project'
-        },
-        {
-            title: 'C# Project 2',
-            projectImg: '',
-            description: 'Project description',
-            utilizes: ['Techniques', 'the', 'project', 'utilizes'],
-            projectLink: 'GitHub/deployed link to project'
-        },
-        {
-            title: 'C# Project 3',
-            projectImg: '',
-            description: 'Project description',
-            utilizes: ['Techniques', 'the', 'project', 'utilizes'],
-            projectLink: 'GitHub/deployed link to project'
-        },
-        {
-            title: 'JS Project 1',
-            projectImg: '',
-            description: 'Project description',
-            utilizes: ['Techniques', 'the', 'project', 'utilizes'],
-            projectLink: 'GitHub/deployed link to project'
-        },
-        {
-            title: 'JS Project 2',
-            projectImg: '',
-            description: 'Project description',
-            utilizes: ['Techniques', 'the', 'project', 'utilizes'],
-            projectLink: 'GitHub/deployed link to project'
-        },
-        {
-            title: 'JS Project 3',
-            projectImg: '',
-            description: 'Project description',
-            utilizes: ['Techniques', 'the', 'project', 'utilizes'],
-            projectLink: 'GitHub/deployed link to project'
-        },
-        {
-            title: 'EFA Project 1',
-            projectImg: '',
-            description: 'Project description',
-            utilizes: ['Techniques', 'the', 'project', 'utilizes'],
-            projectLink: 'GitHub/deployed link to project'
-        },
-        {
-            title: 'EFA Project 2',
-            projectImg: '',
-            description: 'Project description',
-            utilizes: ['Techniques', 'the', 'project', 'utilizes'],
-            projectLink: 'GitHub/deployed link to project'
-        },
-        {
-            title: 'EFA Project 3',
-            projectImg: '',
-            description: 'Project description',
-            utilizes: ['Techniques', 'the', 'project', 'utilizes'],
-            projectLink: 'GitHub/deployed link to project'
-        }
-    ];
 
     const cSharpProjects = [
         {
@@ -85,70 +27,70 @@ const ProjectList = ({ projectLanguage }) => {
             projectLink: 'https://github.com/spdwyer06/EFARedBadgeProject'
         },
         {
-            title: 'C# Project 2',
-            projectImg: '',
-            description: 'Project description',
-            utilizes: ['Techniques', 'the', 'project', 'utilizes'],
-            projectLink: 'GitHub/deployed link to project'
+            title: 'Quick Note',
+            projectImg: QuickNote,
+            description: 'Custom api to easily keep track of notes.',
+            utilizes: ['C#', '.NET Core', 'Dependancy Injection', 'n-tier'],
+            projectLink: 'https://github.com/spdwyer06/QuickNote_Core'
         },
         {
-            title: 'C# Project 3',
-            projectImg: '',
+            title: 'Restaurant Rater',
+            projectImg: RestaurantRater,
             description: 'Project description',
             utilizes: ['Techniques', 'the', 'project', 'utilizes'],
-            projectLink: 'GitHub/deployed link to project'
+            projectLink: 'https://github.com/spdwyer06/RestaurantRaterMVC'
         }
     ];
 
     const javaScriptProjects = [
         {
-            title: 'JS Project 1',
-            projectImg: '',
-            description: 'Project description',
-            utilizes: ['Techniques', 'the', 'project', 'utilizes'],
-            projectLink: 'GitHub/deployed link to project'
+            title: 'Pokedex',
+            projectImg: Pokedex,
+            description: 'Make fetch calls to the Pokemon Api and display them in a user friendly interface.',
+            utilizes: ['JS', 'HTML', 'CSS', 'DOM Manipulation'],
+            projectLink: 'https://github.com/spdwyer06/PokeAPI'
         },
         {
-            title: 'JS Project 2',
-            projectImg: '',
-            description: 'Project description',
-            utilizes: ['Techniques', 'the', 'project', 'utilizes'],
-            projectLink: 'GitHub/deployed link to project'
+            title: 'Movie Search',
+            projectImg: MovieSearch,
+            description: 'Makes a dynamic fetch call based on user input to the Movie Database Api and displays all movies along with the movie poster matching the user query.',
+            utilizes: ['JS', 'React', 'Styled Components', 'Third-party Api'],
+            projectLink: 'https://github.com/spdwyer06/MovieSearch_React'
         },
         {
-            title: 'JS Project 3',
-            projectImg: '',
-            description: 'Project description',
-            utilizes: ['Techniques', 'the', 'project', 'utilizes'],
-            projectLink: 'GitHub/deployed link to project'
+            title: 'Pizza Planet Express',
+            projectImg: PizzaPlanetExress,
+            description: 'Full-stack application with 5 custom created data tables and a custom joining table.',
+            utilizes: ['JS', 'React', 'TypeScript', 'react-router'],
+            projectLink: 'https://github.com/spdwyer06/PizzaPlanetExpress_Server'
         }
     ];
 
     const efaProjects = [
         {
-            title: 'EFA Project 1',
-            projectImg: '',
-            description: 'Project description',
-            utilizes: ['Techniques', 'the', 'project', 'utilizes'],
-            projectLink: 'GitHub/deployed link to project'
+            title: 'Doughlicious',
+            projectImg: Doughlicious,
+            description: 'Collaborative project creating an Api pulling data from 4 custom tables created by separate developers to create a cohesive project.',
+            utilizes: ['C#', 'Agile', 'Team Git', 'Web Api'],
+            projectLink: 'https://github.com/spdwyer06/EFA-Blue-Badge-Project'
         },
         {
-            title: 'EFA Project 2',
-            projectImg: '',
-            description: 'Project description',
-            utilizes: ['Techniques', 'the', 'project', 'utilizes'],
-            projectLink: 'GitHub/deployed link to project'
+            title: 'Static Layout',
+            projectImg: StaticLayout,
+            description: 'My recreation of a professional company website.',
+            utilizes: ['HTML', 'CSS', 'Bootstrap'],
+            projectLink: 'https://github.com/spdwyer06/WDStaticLayout'
         },
         {
-            title: 'EFA Project 3',
-            projectImg: '',
-            description: 'Project description',
-            utilizes: ['Techniques', 'the', 'project', 'utilizes'],
-            projectLink: 'GitHub/deployed link to project'
+            title: 'Book Bubble',
+            projectImg: BookBubble,
+            description: 'Collaborative project creating a full-stack application.',
+            utilizes: ['JS', 'React', 'Team Git'],
+            projectLink: 'https://book-bubble.herokuapp.com/'
         }
     ];
 
-    // const allProjects = [cSharpProjects, javaScriptProjects, efaProjects];
+    const allProjects = cSharpProjects.concat(javaScriptProjects, efaProjects);
 
     // const pythonProjects = [
     //     {
