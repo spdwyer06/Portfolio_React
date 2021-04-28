@@ -23,8 +23,7 @@ const ContactMe = () => {
         // console.log('Email:', email);
         // console.log('Message:', message);
 
-        // EmailJS.sendForm('service_l7w4j5r', 'template_drtbybj', e.target, 'user_gFEfwgQohW2W1YtHEooap')
-        EmailJS.sendForm('service_l7w4j5r', 'template_drtbybj', e.target)
+        EmailJS.sendForm('service_l7w4j5r', 'template_drtbybj', e.target, 'user_gFEfwgQohW2W1YtHEooap')
         // EmailJS.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, e.target, process.env.REACT_APP_USER_ID)
         // EmailJS.sendForm(REACT_APP_SERVICE_ID, REACT_APP_TEMPLATE_ID, e.target, REACT_APP_USER_ID)
             .then(res => {
