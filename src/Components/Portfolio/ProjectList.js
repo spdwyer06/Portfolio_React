@@ -182,9 +182,9 @@ const ProjectList = ({ projectLanguage }) => {
  
     return(
             <Row>
-                <Col className='text-center' xs='12'>
+                {/* <Col className='text-center' xs='12'>
                     <h3>The selected project language is: {projectLanguage}</h3>
-                </Col>
+                </Col> */}
                 {projects.map((project) => <Project title={project.title} description={project.description} utilizes={project.utilizes} projectLink={project.projectLink} />)}
             </Row>
     );
