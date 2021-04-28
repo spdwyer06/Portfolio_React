@@ -8,8 +8,6 @@ import './contactMe.css';
 
 const ContactMe = () => {
     
-    // const {REACT_APP_SERVICE_ID, REACT_APP_TEMPLATE_ID, REACT_APP_USER_ID} = process.env;
-
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');
@@ -25,7 +23,6 @@ const ContactMe = () => {
 
         EmailJS.sendForm('service_l7w4j5r', 'template_drtbybj', e.target, 'user_gFEfwgQohW2W1YtHEooap')
         // EmailJS.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, e.target, process.env.REACT_APP_USER_ID)
-        // EmailJS.sendForm(REACT_APP_SERVICE_ID, REACT_APP_TEMPLATE_ID, e.target, REACT_APP_USER_ID)
             .then(res => {
                 window.location.reload()
             }, err => {

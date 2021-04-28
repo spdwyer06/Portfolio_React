@@ -2,13 +2,13 @@ import {Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Button, Tabl
 
 import './portfolio.css';
 
-const Project = ({ title, description, utilizes, projectLink }) => {
+const Project = ({ title, projectImg, description, utilizes, projectLink }) => {
 
 
     return(
         <Col md='4'>
             <Card>
-                <CardImg top width='100%' src='Project img src' alt='Project Image' />
+                <CardImg top width='100%' src={projectImg} alt='Project Image' />
                 <CardBody>
                     <CardTitle tag='h5'>{title}</CardTitle> 
                     <CardSubtitle tag='h6' className='mb-2 text-muted'>Utilizes: {utilizes.map((item) => <span>{item},</span>)}</CardSubtitle>
