@@ -18,6 +18,7 @@ const Project = ({ title, projectImg, description, utilizes, projectLink }) => {
         });
     }
 
+
     return(
         <Col className='project' md='4'>
             <Card>
@@ -27,7 +28,7 @@ const Project = ({ title, projectImg, description, utilizes, projectLink }) => {
                     <CardText className='project-subtitle text-muted '>Utilizes: {displayItems(utilizes)}</CardText>
                     {/* <CardSubtitle tag='h6' className='mb-2 text-muted'>Utilizes: {utilizes.map((item) => <span>{item},</span>)}</CardSubtitle> */}
                     {/* <CardText className='project-description'>{description}</CardText> */}
-                    <Button className='project-btn'>View Project</Button>
+                    <Button className='project-btn' onClick={() => window.open(projectLink, '_blank')}>View Project</Button>
                 </CardBody>
             </Card>
         </Col>
