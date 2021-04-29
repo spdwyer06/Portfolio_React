@@ -4,7 +4,7 @@ import EmailJS from 'emailjs-com';
 
 import MyResume from '../../Assets/SeanDwyerResume.pdf';
 
-import './contactMe.css';
+import './ContactMe.css';
 
 const ContactMe = () => {
     

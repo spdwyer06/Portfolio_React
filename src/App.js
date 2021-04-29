@@ -7,7 +7,7 @@ import Footer from './Components/Footer/Footer';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/font-awesome/css/font-awesome.min.css'; 
-import './app.css';
+import './App.css';
 
 
 function App() {

@@ -9,7 +9,7 @@ import LinkedInLogo2 from '../../Assets/FooterLogo_LinkedIn2.png';
 import CodePenLogo2 from '../../Assets/FooterLogo_CodePen2.png';
 import CodePenLogo3 from '../../Assets/FooterLogo_CodePen3.png';
 
-import './footer.css';
+import './Footer.css';
 
 const Footer = () => {
 

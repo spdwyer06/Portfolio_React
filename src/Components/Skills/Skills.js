@@ -8,7 +8,7 @@ import HtmlCssLogo from '../../Assets/SkillsLogo_HtmlCss.png';
 import ReactLogo from '../../Assets/SkillsLogo_React.png';
 import GitHubLogo from '../../Assets/SkillsLogo_GitHub.png';
 
-import './skills.css';
+import './Skills.css';
 
 const Skills = () => {
     return (
